@@ -13,11 +13,13 @@ import {
   MenuUnfoldOutlined,
   LogoutOutlined,
   ShopOutlined,
+  FacebookOutlined,
 } from '@ant-design/icons';
 import DashboardPage from './pages/DashboardPage';
 import ProductsPage from './pages/ProductsPage';
 import OrdersPage from './pages/OrdersPage';
 import UsersPage from './pages/UsersPage';
+import FBAdsPage from './pages/FBAdsPage';
 
 const { Header, Sider, Content } = Layout;
 const { Text } = Typography;
@@ -27,6 +29,7 @@ const menuItems = [
   { key: '/products', icon: <ShoppingOutlined />, label: 'สินค้า' },
   { key: '/orders', icon: <OrderedListOutlined />, label: 'คำสั่งซื้อ' },
   { key: '/users', icon: <UserOutlined />, label: 'ผู้ใช้งาน' },
+  { key: '/fb-ads', icon: <FacebookOutlined />, label: 'Facebook Ads' },
 ];
 
 export default function App() {
@@ -138,6 +141,7 @@ export default function App() {
                 <Route path="/products" element={<ProductsPage />} />
                 <Route path="/orders" element={<OrdersPage />} />
                 <Route path="/users" element={<UsersPage />} />
+                <Route path="/fb-ads" element={<FBAdsPage />} />
               </Routes>
             </div>
           </Content>
